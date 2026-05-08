@@ -1,0 +1,83 @@
+# Natural Language Evaluation Rubric
+
+This rubric measures how well the chatbot handles natural language questions about California crime data, especially when users use slang, shorthand, ambiguity, or colloquial wording.
+
+## Goal
+
+Evaluate whether the system correctly interprets user intent and responds with a grounded, useful answer.
+
+## Scoring
+
+Each category is scored from 1 to 5.
+
+### 1 = Very weak
+Fails to understand the question, invents meaning, or gives an irrelevant answer.
+
+### 2 = Weak
+Partially understands the question, but misses key intent or handles ambiguity poorly.
+
+### 3 = Adequate
+Gets the broad idea right, but loses nuance or fails to clarify uncertainty.
+
+### 4 = Strong
+Interprets the question well, maps language to the right concept, and answers clearly.
+
+### 5 = Excellent
+Understands nuanced wording, handles ambiguity responsibly, and gives a grounded, useful response.
+
+## Categories
+
+### Intent recognition
+- Did the system understand what the user was trying to ask?
+- Did it translate slang or casual language into the right analytical task?
+- Did it avoid taking figurative language too literally?
+
+### Ambiguity handling
+- Did the system recognize when the question was unclear?
+- Did it ask for clarification when needed?
+- Did it avoid pretending a vague phrase had a precise statistical meaning?
+
+### Language flexibility
+- Did the system handle plain English, shorthand, slang, and colloquialisms?
+- Did it remain useful even when the query was incomplete or informal?
+
+### Grounding
+- Did the answer stay tied to the available public data?
+- Did it avoid unsupported claims or invented statistics?
+- Did it explain what dataset or concept it was using?
+
+### Clarity
+- Was the answer easy to understand?
+- Did it clearly separate facts, interpretation, and limitations?
+- Was the response concise but still useful?
+
+## High-scoring behavior
+
+A high-scoring answer:
+- interprets "Where is crime popping off?" as a possible request for areas with rising crime
+- recognizes that "crime" may need to be narrowed to violent, property, or other categories
+- asks a follow-up when the wording is too vague
+- grounds the response in a named public dataset
+- avoids overclaiming
+
+## Low-scoring behavior
+
+A low-scoring answer:
+- treats slang as noise and ignores intent
+- gives a generic crime lecture instead of answering the question
+- hallucinates statistics
+- assumes one exact meaning for a vague phrase without clarification
+- speaks confidently when the data does not support the claim
+
+## Suggested interpretation
+
+- 21 to 25 = Excellent natural language handling
+- 16 to 20 = Strong
+- 11 to 15 = Usable but needs work
+- 5 to 10 = Weak
+
+## Notes
+
+This rubric is designed for public-data chatbot evaluation, not open-ended conversation quality alone. The key test is whether the system can handle messy human language without losing analytical discipline.
+
+
